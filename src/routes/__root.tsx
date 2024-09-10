@@ -25,7 +25,7 @@ function Root() {
       <div className="flex min-h-[100dvh] flex-col">
         <Hero
           title="Nickel Mattera"
-          description="Experienced software engineer with a passion for building innovative solutions."
+          description="Experienced software engineer with a passion for building creative and innovative solutions and a professional climber on the side."
           image="/images/nickel.webp"
           imageSet="/images/nickel@2x.webp 2x">
           <div className="space-x-4 text-center lg:text-left">
@@ -37,6 +37,11 @@ function Root() {
             <Button variant="outline" size="lg" className="mt-4" asChild>
               <a href="https://github.com/NicholeMattera" target="_blank">
                 GitHub
+              </a>
+            </Button>
+            <Button variant="outline" size="lg" className="mt-4" asChild>
+              <a href="https://www.mountainproject.com/user/201597317/nickel-mattera" target="_blank">
+                Mountain Project
               </a>
             </Button>
           </div>

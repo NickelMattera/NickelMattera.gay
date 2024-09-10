@@ -20,16 +20,22 @@ export default function Footer() {
           GitHub
         </a>
         <a
+          href="https://www.mountainproject.com/user/201597317/nickel-mattera"
+          target="_blank"
+          className="text-xs underline-offset-4 hover:underline">
+          Mountain Project
+        </a>
+        <a
           href="https://www.goodreads.com/nickelmattera"
           target="_blank"
           className="text-xs underline-offset-4 hover:underline">
           Goodreads
         </a>
         <a
-          href="https://www.mountainproject.com/user/201597317/nickel-mattera"
+          href="https://www.instagram.com/nickel.climbs"
           target="_blank"
           className="text-xs underline-offset-4 hover:underline">
-          Mountain Project
+          Instagram
         </a>
       </nav>
     </footer>

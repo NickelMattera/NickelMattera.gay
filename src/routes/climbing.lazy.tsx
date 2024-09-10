@@ -1,9 +1,10 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import Certification from '@/components/certification'
 import { cn } from '@/lib/utils'
 import { createLazyFileRoute } from '@tanstack/react-router'
 import Section from '@/components/section'
 import StackedBarChart from '@/components/stacked-bar-chart'
+import Education from '@/components/education'
 
 export const Route = createLazyFileRoute('/climbing')({
   component: () => {
@@ -16,20 +17,97 @@ export const Route = createLazyFileRoute('/climbing')({
     }
 
     const pitchesPerYear = [
-      { year: 2022, topRope: 2, soloTopRope: 0, sportLead: 0, tradLead: 0, follow: 0 },
-      { year: 2023, topRope: 7, soloTopRope: 0, sportLead: 7, tradLead: 2, follow: 2 },
-      { year: 2024, topRope: 13, soloTopRope: 7, sportLead: 6, tradLead: 13, follow: 11 },
+      {
+        year: 2022,
+        topRope: 2,
+        soloTopRope: 0,
+        sportLead: 0,
+        tradLead: 0,
+        follow: 0,
+      },
+      {
+        year: 2023,
+        topRope: 7,
+        soloTopRope: 0,
+        sportLead: 7,
+        tradLead: 2,
+        follow: 2,
+      },
+      {
+        year: 2024,
+        topRope: 13,
+        soloTopRope: 7,
+        sportLead: 6,
+        tradLead: 13,
+        follow: 11,
+      },
     ]
 
     const rockRoutesByGrade = [
-      { grade: '5.3', topRope: 1, soloTopRope: 2, sportLead: 4, tradLead: 0, follow: 0 },
-      { grade: '5.4', topRope: 1, soloTopRope: 2, sportLead: 1, tradLead: 5, follow: 2 },
-      { grade: '5.5', topRope: 0, soloTopRope: 0, sportLead: 0, tradLead: 3, follow: 1 },
-      { grade: '5.6', topRope: 3, soloTopRope: 2, sportLead: 2, tradLead: 5, follow: 3 },
-      { grade: '5.7', topRope: 6, soloTopRope: 0, sportLead: 3, tradLead: 0, follow: 4 },
-      { grade: '5.8', topRope: 3, soloTopRope: 0, sportLead: 2, tradLead: 1, follow: 1 },
-      { grade: '5.9', topRope: 2, soloTopRope: 1, sportLead: 1, tradLead: 0, follow: 0 },
-      { grade: '5.10', topRope: 3, soloTopRope: 0, sportLead: 0, tradLead: 0, follow: 0 },
+      {
+        grade: '5.3',
+        topRope: 1,
+        soloTopRope: 2,
+        sportLead: 4,
+        tradLead: 0,
+        follow: 0,
+      },
+      {
+        grade: '5.4',
+        topRope: 1,
+        soloTopRope: 2,
+        sportLead: 1,
+        tradLead: 5,
+        follow: 2,
+      },
+      {
+        grade: '5.5',
+        topRope: 0,
+        soloTopRope: 0,
+        sportLead: 0,
+        tradLead: 3,
+        follow: 1,
+      },
+      {
+        grade: '5.6',
+        topRope: 3,
+        soloTopRope: 2,
+        sportLead: 2,
+        tradLead: 5,
+        follow: 3,
+      },
+      {
+        grade: '5.7',
+        topRope: 6,
+        soloTopRope: 0,
+        sportLead: 3,
+        tradLead: 0,
+        follow: 4,
+      },
+      {
+        grade: '5.8',
+        topRope: 3,
+        soloTopRope: 0,
+        sportLead: 2,
+        tradLead: 1,
+        follow: 1,
+      },
+      {
+        grade: '5.9',
+        topRope: 2,
+        soloTopRope: 1,
+        sportLead: 1,
+        tradLead: 0,
+        follow: 0,
+      },
+      {
+        grade: '5.10',
+        topRope: 3,
+        soloTopRope: 0,
+        sportLead: 0,
+        tradLead: 0,
+        follow: 0,
+      },
     ]
 
     return (
@@ -93,21 +171,20 @@ export const Route = createLazyFileRoute('/climbing')({
         </Section>
 
         <Section title="Education">
-          <div className={cn('mt-4 grid gap-4 md:grid-cols-2')}>
-            <Card className={cn('mt-4')}>
-              <CardHeader>
-                <CardTitle>Single Pitch Instructor Course</CardTitle>
-                <CardDescription>AMGA | June 2024</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground"></p>
-              </CardContent>
-            </Card>
+          <div className={cn('mt-4 grid gap-4 lg:grid-cols-2')}>
+            <Education completed="June 2024" organization="AMGA" title="Single Pitch Instructor Course">
+              <p>During the course we covered topics such as...</p>
+              <ul className={cn('list-disc pl-6')}>
+                <li>Risk management techniques</li>
+                <li>Anchor building, belay techniques, and rescue/assistant for both bottom and top managed sites</li>
+                <li>Instructional techniques for teaching climbing movement</li>
+              </ul>
+            </Education>
           </div>
         </Section>
 
         <Section title="Certifications">
-          <div className="mt-4 space-y-4">
+          <div className={cn('mt-4 grid gap-4 lg:grid-cols-2')}>
             <Certification issued="February 2024" expires="February 2026" title="NOLS Wilderness First Aid">
               <p>
                 This certifies that I learned how to use the Patient Assessment System, how to provide effective first
@@ -116,7 +193,11 @@ export const Route = createLazyFileRoute('/climbing')({
               </p>
             </Certification>
             <Certification issued="February 2024" expires="February 2026" title="NOLS Epinephrine Auto-Injector">
-              <p>This certifies that I learned how to </p>
+              <p>
+                This certifies that I learned how to recognizing anaphylaxis, administer epinephrine using an
+                auto-injector, understand indications and contraindications for epinephrine use, and proper
+                documentation and reporting procedures.
+              </p>
             </Certification>
           </div>
         </Section>

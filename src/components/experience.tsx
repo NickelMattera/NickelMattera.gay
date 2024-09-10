@@ -2,6 +2,9 @@
  * Generated with v0 by Vercel. (https://v0.dev/t/MqW2cIkwT16)
  */
 
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { cn } from '@/lib/utils'
+
 export interface ExperienceProps {
   children?: React.ReactNode
   company: string
@@ -11,12 +14,14 @@ export interface ExperienceProps {
 
 export default function Experience({ children, company, duration, title }: ExperienceProps) {
   return (
-    <>
-      <h3 className="text-lg font-semibold text-foreground">{title}</h3>
-      <p className="text-muted-foreground">
-        {company} | {duration}
-      </p>
-      <div className="mt-2 space-y-2 text-muted-foreground">{children}</div>
-    </>
+    <Card className={cn('mt-4')}>
+      <CardHeader>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription>
+          {company} | {duration}
+        </CardDescription>
+      </CardHeader>
+      {children ? <CardContent>{children}</CardContent> : null}
+    </Card>
   )
 }

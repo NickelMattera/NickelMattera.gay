@@ -2,6 +2,9 @@
  * Generated with v0 by Vercel. (https://v0.dev/t/MqW2cIkwT16)
  */
 
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { cn } from '@/lib/utils'
+
 export interface CertificateProps {
   children?: React.ReactNode
   expires?: string
@@ -12,13 +15,15 @@ export interface CertificateProps {
 
 export default function Certificate({ children, expires, expired, issued, title }: CertificateProps) {
   return (
-    <>
-      <h3 className="text-lg font-semibold text-foreground">{title}</h3>
-      <p className="text-muted-foreground">
-        Issued {issued}
-        {(expires && ` | Expires ${expires}`) || (expired && ` | Expired ${expired}`)}
-      </p>
-      <div className="mt-2 text-muted-foreground">{children}</div>
-    </>
+    <Card className={cn('mt-4')}>
+      <CardHeader>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription>
+          Issued {issued}
+          {(expires && ` | Expires ${expires}`) || (expired && ` | Expired ${expired}`)}
+        </CardDescription>
+      </CardHeader>
+      {children ? <CardContent>{children}</CardContent> : null}
+    </Card>
   )
 }
