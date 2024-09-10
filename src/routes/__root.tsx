@@ -4,7 +4,6 @@ import { createRootRoute, Link, Outlet, useRouterState } from '@tanstack/react-r
 import { cn } from '@/lib/utils'
 import Footer from '@/components/footer'
 import Hero from '@/components/hero'
-import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -25,7 +24,7 @@ function Root() {
       <div className="flex min-h-[100dvh] flex-col">
         <Hero
           title="Nickel Mattera"
-          description="Experienced software engineer with a passion for building creative and innovative solutions and a professional climber on the side."
+          description="Experienced software engineer with a passion for building creative solutions and a professional climber on the side."
           image="/images/nickel.webp"
           imageSet="/images/nickel@2x.webp 2x">
           <div className="space-x-4 text-center lg:text-left">
@@ -76,7 +75,6 @@ function Root() {
 
         <Footer />
       </div>
-      <TanStackRouterDevtools />
     </>
   )
 }
