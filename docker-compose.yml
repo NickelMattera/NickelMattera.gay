@@ -1,5 +1,7 @@
 services:
   nickelmattera:
     build: .
+    image: nickelmattera_production
+    container_name: nickelmattera
     ports:
-      - 8080:80
+      - 8084:80
