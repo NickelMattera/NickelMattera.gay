@@ -55,7 +55,7 @@ export const Route = createLazyFileRoute('/')({
           <Experience
             company="Pendo.io"
             duration="January 2020 - June 2023"
-            title="Staff Front End Engineer, Tech Lead">
+            title="Staff Frontend Engineer, Tech Lead">
             <ul className={cn('list-disc pl-6')}>
               <li>
                 Contributed to developing Core Events and Product Engagement Score, including building a custom radar
@@ -97,7 +97,7 @@ export const Route = createLazyFileRoute('/')({
               <li>Assisted as a frontend engineer working in React to the Email Marketing are of Trendkite.</li>
             </ul>
           </Experience>
-          <Experience company="Mindtree" duration="January 2014 - September 2016" title="Software Engineer">
+          <Experience company="Mindtree" duration="January 2014 - September 2016" title="Technical Project Lead">
             <ul className={cn('list-disc pl-6')}>
               <li>
                 Led mobile projects, such as Volvo Scout Master and Mack CV360 iPad apps, for their Delivery Center in

@@ -52,7 +52,7 @@ function Root() {
               <NavigationMenuItem>
                 <Link to="/">
                   <NavigationMenuLink active={location.pathname === '/'} className={navigationMenuTriggerStyle()}>
-                    Programming
+                    Software Engineering
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
