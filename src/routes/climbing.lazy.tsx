@@ -35,7 +35,7 @@ export const Route = createLazyFileRoute('/climbing')({
       },
       {
         year: 2024,
-        topRope: 13,
+        topRope: 16,
         soloTopRope: 7,
         sportLead: 6,
         tradLead: 13,
@@ -62,7 +62,7 @@ export const Route = createLazyFileRoute('/climbing')({
       },
       {
         grade: '5.5',
-        topRope: 0,
+        topRope: 2,
         soloTopRope: 0,
         sportLead: 0,
         tradLead: 3,
@@ -70,7 +70,7 @@ export const Route = createLazyFileRoute('/climbing')({
       },
       {
         grade: '5.6',
-        topRope: 3,
+        topRope: 4,
         soloTopRope: 2,
         sportLead: 2,
         tradLead: 5,
