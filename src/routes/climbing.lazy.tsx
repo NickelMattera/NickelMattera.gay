@@ -128,7 +128,7 @@ export const Route = createLazyFileRoute('/climbing')({
                 <CardTitle className={cn('text-center')}>Total Number of Routes</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className={cn('text-center text-4xl font-bold text-foreground')}>67</p>
+                <p className={cn('text-center text-4xl font-bold text-foreground')}>70</p>
               </CardContent>
             </Card>
             <Card className={cn('flex-auto')}>
@@ -136,7 +136,7 @@ export const Route = createLazyFileRoute('/climbing')({
                 <CardTitle className={cn('text-center')}>Total Number of Pitches</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className={cn('text-center text-4xl font-bold text-foreground')}>71</p>
+                <p className={cn('text-center text-4xl font-bold text-foreground')}>74</p>
               </CardContent>
             </Card>
           </div>
