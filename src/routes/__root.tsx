@@ -9,8 +9,8 @@ import {
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu'
+import { navigationMenuTriggerStyle } from '@/components/ui/navigation-menu.constants'
 
 export const Route = createRootRoute({
   component: () => <Root />,

@@ -52,10 +52,7 @@ export const Route = createLazyFileRoute('/')({
               <li>Collaborate on the creation of a virtual privilege walk for leaders.</li>
             </ul>
           </Experience>
-          <Experience
-            company="Pendo.io"
-            duration="January 2020 - June 2023"
-            title="Staff Frontend Engineer, Tech Lead">
+          <Experience company="Pendo.io" duration="January 2020 - June 2023" title="Staff Frontend Engineer, Tech Lead">
             <ul className={cn('list-disc pl-6')}>
               <li>
                 Contributed to developing Core Events and Product Engagement Score, including building a custom radar
