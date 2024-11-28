@@ -1,4 +1,4 @@
-FROM node:lts-alpine AS nickelmattera_build
+FROM node:lts-alpine AS builder
 
 WORKDIR /app
 COPY . /app
@@ -6,8 +6,7 @@ COPY . /app
 RUN npm ci
 RUN npm run build
 
-
-FROM nginx:stable-alpine AS nickelmattera_production
+FROM nginx:stable-alpine AS prod
 
 COPY scripts/nginx.config /etc/nginx/conf.d/default.conf
-COPY --from=nickelmattera_build /app/dist /usr/share/nginx/html
+COPY --from=builder /app/dist /usr/share/nginx/html
