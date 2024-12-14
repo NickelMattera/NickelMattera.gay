@@ -1,7 +1,3 @@
-/**
- * Generated with shadcn/ui. (https://ui.shadcn.com/charts)
- */
-
 import * as React from 'react'
 import * as RechartsPrimitive from 'recharts'
 

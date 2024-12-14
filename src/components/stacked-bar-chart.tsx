@@ -1,7 +1,3 @@
-/**
- * Generated with shadcn/ui. (https://ui.shadcn.com/charts)
- */
-
 import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from 'recharts'
 
 import {

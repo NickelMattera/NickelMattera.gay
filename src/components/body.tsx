@@ -1,7 +1,3 @@
-/**
- * Generated with v0 by Vercel. (https://v0.dev/t/MqW2cIkwT16)
- */
-
 export interface BodyProps {
   children?: React.ReactNode
 }
