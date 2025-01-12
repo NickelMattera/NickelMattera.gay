@@ -5,6 +5,7 @@ import { createLazyFileRoute } from '@tanstack/react-router'
 import Section from '@/components/section'
 import StackedBarChart from '@/components/stacked-bar-chart'
 import Education from '@/components/education'
+import Experience from '@/components/experience'
 
 export const Route = createLazyFileRoute('/climbing')({
   component: () => {
@@ -122,6 +123,22 @@ export const Route = createLazyFileRoute('/climbing')({
         </Section>
 
         <Section title="Experience">
+          <div className={cn('mt-4 grid items-start gap-4 lg:grid-cols-2')}>
+            <Experience company="OutClimb" duration="January 2025 - Present" title="Vice President & Treasurer">
+              <p>
+                We are a Minnesota-based organization dedicated to making climbing accessible to as many trans and queer
+                people as possible. We also foster a supportive community and promote diversity, equity, and inclusion
+                within the outdoor recreation communities.
+              </p>
+            </Experience>
+            <Experience company="Midwest Mountain Guides" duration="January 2025" title="Community Leader Guide">
+              <p>
+                I was an instructor for the Women, Trans, Femme beginner ice climbing clinic at the Sandstone Ice
+                Festival. The clinic was an introduction to ice climbing that created space for women, trans and femme
+                climbers.
+              </p>
+            </Experience>
+          </div>
           <div className={cn('mt-4 flex w-full gap-4')}>
             <Card className={cn('flex-auto')}>
               <CardHeader>
