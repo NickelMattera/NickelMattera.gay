@@ -12,9 +12,10 @@ export const Route = createLazyFileRoute('/climbing')({
     const climbingExperienceConfig = {
       topRope: { color: 'hsl(var(--chart-1))', label: 'Top Rope' },
       soloTopRope: { color: 'hsl(var(--chart-2))', label: 'Solo Top Rope' },
-      sportLead: { color: 'hsl(var(--chart-3))', label: 'Sport Lead' },
-      follow: { color: 'hsl(var(--chart-4))', label: 'Follow' },
-      tradLead: { color: 'hsl(var(--chart-5))', label: 'Trad Lead' },
+      iceTopRope: { color: 'hsl(var(--chart-3))', label: 'Ice Top Rope' },
+      sportLead: { color: 'hsl(var(--chart-4))', label: 'Sport Lead' },
+      follow: { color: 'hsl(var(--chart-5))', label: 'Follow' },
+      tradLead: { color: 'hsl(var(--chart-6))', label: 'Trad Lead' },
     }
 
     const pitchesPerYear = [
@@ -38,9 +39,19 @@ export const Route = createLazyFileRoute('/climbing')({
         year: 2024,
         topRope: 16,
         soloTopRope: 7,
+        iceTopRope: 6,
         sportLead: 6,
         tradLead: 13,
         follow: 11,
+      },
+      {
+        year: 2025,
+        topRope: 0,
+        soloTopRope: 0,
+        iceTopRope: 7,
+        sportLead: 0,
+        tradLead: 0,
+        follow: 0,
       },
     ]
 
@@ -145,7 +156,7 @@ export const Route = createLazyFileRoute('/climbing')({
                 <CardTitle className={cn('text-center')}>Total Number of Routes</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className={cn('text-center text-4xl font-bold text-foreground')}>70</p>
+                <p className={cn('text-center text-4xl font-bold text-foreground')}>83</p>
               </CardContent>
             </Card>
             <Card className={cn('flex-auto')}>
@@ -153,7 +164,7 @@ export const Route = createLazyFileRoute('/climbing')({
                 <CardTitle className={cn('text-center')}>Total Number of Pitches</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className={cn('text-center text-4xl font-bold text-foreground')}>74</p>
+                <p className={cn('text-center text-4xl font-bold text-foreground')}>86</p>
               </CardContent>
             </Card>
           </div>
