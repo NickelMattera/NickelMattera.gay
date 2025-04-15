@@ -34,7 +34,7 @@ function Root() {
               </a>
             </Button>
             <Button variant="outline" size="lg" className="mt-4" asChild>
-              <a href="https://github.com/NicholeMattera" target="_blank">
+              <a href="https://github.com/NickelMattera" target="_blank">
                 GitHub
               </a>
             </Button>
